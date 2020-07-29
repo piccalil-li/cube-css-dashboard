@@ -1,0 +1,33 @@
+.table-group {
+  border: 1px solid get-color('grey');
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+
+  h3 {
+    --flow-space: #{get-size('600')};
+  }
+
+  table {
+    --flow-space: 0.2rem;
+
+    width: 100%;
+    min-width: 30rem;
+  }
+
+  td,
+  h3 {
+    padding: 0.5rem 1rem;
+  }
+
+  tr:first-child {
+    border-top: 1px solid get-color('grey');
+  }
+
+  tr:nth-child(odd) td {
+    background: get-color('light-shade');
+  }
+
+  td:nth-child(3) {
+    text-align: right;
+  }
+}
