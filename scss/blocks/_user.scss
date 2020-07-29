@@ -1,0 +1,10 @@
+.user {
+  display: inline-grid;
+  align-items: center;
+  grid-template-columns: max-content 50px;
+  grid-gap: get-size('300');
+
+  img {
+    border-radius: 100%;
+  }
+}
