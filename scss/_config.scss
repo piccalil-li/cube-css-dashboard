@@ -1,0 +1,91 @@
+/**
+ * BASE SIZE
+ * All calculations are based on this. It’s recommended that
+ * you keep it at 1rem because that is the root font size. You
+ * can set it to whatever you like and whatever unit you like.
+ */
+$gorko-base-size: 1rem;
+
+/**
+ * SIZE SCALE
+ * This is a Major Third scale that powers all the utilities that
+ * it is relevant for (font-size, margin, padding). All items are
+ * calcuated off the base size, so change that and cascade across
+ * your whole project.
+ */
+$gorko-size-scale: (
+  '300': $gorko-base-size * 0.8,
+  '400': $gorko-base-size,
+  '500': $gorko-base-size * 1.33,
+  '600': $gorko-base-size * 1.77,
+  '700': $gorko-base-size * 2.4
+);
+
+/**
+ * COLORS
+ * Colors are shared between backgrounds and text by default. 
+ * You can also use them to power borders, fills or shadows, for example.
+ */
+$gorko-colors: (
+  'primary': #231651,
+  'secondary': #ff8484,
+  'secondary-shade': #ff5151,
+  'tertiary': #2c988c,
+  'tertiary-glare': #d6fff6,
+  'quaternary': #2374ab,
+  'light': #fafafa,
+  'light-shade': #eeeeee,
+  'grey': #c4c4c4
+);
+
+/**
+ * CORE CONFIG
+ * This powers everything from utility class generation to breakpoints
+ * to enabling/disabling pre-built components/utilities.
+ */
+$gorko-config: (
+  'bg': (
+    'items': $gorko-colors,
+    'output': 'standard',
+    'property': 'background'
+  ),
+  'color': (
+    'items': $gorko-colors,
+    'output': 'standard',
+    'property': 'color'
+  ),
+  'font': (
+    'items': (
+      'base': '"IBM Plex Sans", Helvetica, Arial, sans-serif',
+      'mono': '"IBM Plex Mono", Courier New, Courier, monospace'
+    ),
+    'output': 'standard',
+    'property': 'font-family'
+  ),
+  'gap-top': (
+    'items': $gorko-size-scale,
+    'output': 'standard',
+    'property': 'margin-top'
+  ),
+  'pad-top': (
+    'items': $gorko-size-scale,
+    'output': 'standard',
+    'property': 'padding-top'
+  ),
+  'text': (
+    'items': $gorko-size-scale,
+    'output': 'responsive',
+    'property': 'font-size'
+  ),
+  'weight': (
+    'items': (
+      'medium': '500',
+      'bold': '700'
+    ),
+    'output': 'standard',
+    'property': 'font-weight'
+  ),
+  'breakpoints': (
+    'md': '(min-width: 48em)'
+  )
+);
