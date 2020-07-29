@@ -4,22 +4,17 @@
   "description": "A banking dashboard that you build in the Piccalilli tutorial: Build a dashboard with CUBE CSS",
   "main": "index.js",
   "scripts": {
-    "start": "npx sass scss/global.scss css/global.css --watch",
-    "build": "npx sass scss/global.scss css/global.css --style=compressed"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/hankchizljaw/cube-css-dashboard.git"
+    "url": "git+https://github.com/piccalil-li/cube-css-dashboard.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/hankchizljaw/cube-css-dashboard/issues"
+    "url": "https://github.com/piccalil-li/cube-css-dashboard/issues"
   },
-  "homepage": "https://github.com/hankchizljaw/cube-css-dashboard#readme",
-  "dependencies": {
-    "gorko": "^0.2.1",
-    "sass": "^1.26.10"
-  }
+  "homepage": "https://github.com/piccalil-li/cube-css-dashboard#readme"
 }
