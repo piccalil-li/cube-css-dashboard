@@ -47,3 +47,10 @@ th {
   outline: 2px dotted;
   outline-offset: 0.25rem;
 }
+
+// Utilities
+@import 'utilities/flow';
+@import 'utilities/radius';
+@import 'utilities/splitter';
+@import 'utilities/wrapper';
+@import 'utilities/visually-hidden';
